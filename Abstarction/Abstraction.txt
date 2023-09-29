@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+abstract class shape{
+   abstract void draw();
+}
+
+class rectangle extends shape{
+    void draw(){
+    System.out.println("Draw rectangle");
+   }
+}
+
+class circle extends shape{
+    void draw(){
+    System.out.println("Draw circle");
+   }
+}
+
+class Abstraction{
+	public static void main(String args[]){
+    shape s1 = new circle();
+    shape s2 = new rectangle();
+
+   s1.draw();
+   s2.draw();
+}
+}
