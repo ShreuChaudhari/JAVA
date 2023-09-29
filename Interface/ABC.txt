@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+class Std{
+	int RN;
+	String Name;
+	int Total;
+	
+	
+	void read(){
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the roll number and name: ");
+		RN = sc.nextInt();
+		Name = sc.nextLine();
+                Total= sc.nextInt();
+                
+         }
+ 
+       void disp(){
+		System.out.println("RN: "+RN+"\tName: "+Name+"\tTotal:" +Total);
+        }
+}
+Interface sports;
+   {
+       final int grace = 10;
+       void dispgrace()
+   }
+
+     
+Class Ms extends Std implements sports;
+  {
+   float per;
+   void dispgrace()
+    {
+    System.out.println("Grace: "+grace);
+    }
+
+
+    void calculate()
+   {
+   Total = Total + grace;
+   per = Total/5.0;
+   }
+
+
+  void disp Ms()
+  {
+   disp();
+   dispgrace();
+   calculate();
+   System.out.println("Per: "+per);
+  }
+}
+
+
+Class ABC{
+  public static void main(String args[]){
+   {
+    Ms m1 = new Ms();
+    m1.read();
+    m1.dispMs();
+   }
+ }
